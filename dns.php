@@ -3,7 +3,7 @@
 Function dns($domain){
 	echo $domain;
 	echo "\n";
-	$rs=dns_get_record(strtolower($domain),DNS_NS);
+	$rs=dns_get_record(strtolower($domain),DNS_ANY);
 	print_r($rs);
 	echo "\n";
 }
